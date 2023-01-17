@@ -1,11 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import Header from './assets/components/Header'
+import ProductList from './assets/components/ProductList'
 
 function App() {
   const [count, setCount] = useState(0)
   return(
-    <h1>Web Piccola Gertru</h1>
+    <>
+    <Header/>
+    <ProductList />
+    </>
   )
  
 }
