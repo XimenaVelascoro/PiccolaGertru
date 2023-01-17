@@ -5,9 +5,10 @@
 
 //Menu y subcategorias
 //entradas
+
 export const dataEntradas = [
   {
-    id: 001,
+    id: aa1,
     nameProduct: "Antipasto",
     description:
       "Mozzarella di bufala, tomate seco, berenjena, pimenton, champiñon y tahini de garbanzo",
@@ -16,7 +17,7 @@ export const dataEntradas = [
     quantity: 1,
   },
   {
-    id: 002,
+    id: aa2,
     nameProduct: "Foccacia Tahini",
     description:
       "Pan al horno de leña con dip de tahini de garbanzo",
@@ -25,7 +26,7 @@ export const dataEntradas = [
     quantity: 1,
   },
   {
-    id: 003,
+    id: aa3,
     nameProduct: "Mozzarrella Caliente",
     description:
       "Acompañado de rodajas de tomate, albahaca y queso mozzarella gratinado",
@@ -39,7 +40,7 @@ export const dataEntradas = [
 //carnes
 export const dataCarnes = [
   {
-    id: 021,
+    id: a21,
     nameProduct: "Picada de lomo con champiñones",
     description:
       "Trozos de lomo salteados con champiñones y crema de leche acompañada de pasta o ensalada",
@@ -48,7 +49,7 @@ export const dataCarnes = [
     quantity: 1,
   },
   {
-    id: 022,
+    id: a22,
     nameProduct: "Steak Pimienta",
     description:
       "Acompañado de pasta o ensalada",
@@ -57,7 +58,7 @@ export const dataCarnes = [
     quantity: 1,
   },
   {
-    id: 023,
+    id: a23,
     nameProduct: "Costillas BBQ",
     description:
       "Acompañadas de pasta o ensalda",
@@ -70,7 +71,7 @@ export const dataCarnes = [
 //pescados   :O_
 export const dataPescados = [
   {
-    id: 041,
+    id: a41,
     nameProduct: "Salmon Parrilla",
     description:
       "Acompañado de pasta o ensalada",
@@ -79,7 +80,7 @@ export const dataPescados = [
     quantity: 1,
   },
   {
-    id: 042,
+    id: a42,
     nameProduct: "Filete de atún a la parrilla ",
     description:
       "Acompañado de pasta o ensalada",
@@ -88,7 +89,7 @@ export const dataPescados = [
     quantity: 1,
   },
   {
-    id: 043,
+    id: a43,
     nameProduct: "Cazuela de mariscos",
     description:
       " ----------- ",
@@ -101,7 +102,7 @@ export const dataPescados = [
 //pastass :O___
 export const dataPastas = [
   {
-    id: 061,
+    id: a61,
     nameProduct: "Macarroni al horno",
     description:
       "Salsa rose con queso derretido al hornode leña",
@@ -110,7 +111,7 @@ export const dataPastas = [
     quantity: 1,
   },
   {
-    id: 062,
+    id: a62,
     nameProduct: "Lasagna Bolognesa",
     description:
       "Salsa bolognesa con queso derretido al horno de leña",
@@ -119,7 +120,7 @@ export const dataPastas = [
     quantity: 1,
   },
   {
-    id: 063,
+    id: a63,
     nameProduct: "Macarroni cuatro quesos",
     description:
       "Salsa blanca, queso holandés, azul y mozzarrella",
@@ -132,7 +133,7 @@ export const dataPastas = [
 //rissotto
 export const dataRissotto = [
   {
-    id: 081,
+    id: a81,
     nameProduct: "Rissotto frutos del mar",
     description:
       " -------------  ",
@@ -141,7 +142,7 @@ export const dataRissotto = [
     quantity: 1,
   },
   {
-    id: 082,
+    id: a82,
     nameProduct: "Paella marinera",
     description:
       "Camarón, calamar pescado, langostinos y mejillones",
@@ -150,7 +151,7 @@ export const dataRissotto = [
     quantity: 1,
   },
   {
-    id: 083,
+    id: a83,
     nameProduct: "Rissotto al funghi",
     description:
       " -------------  ",
