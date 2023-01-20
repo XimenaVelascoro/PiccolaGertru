@@ -1,3 +1,3 @@
 export default function Basket (){
-    return 'Basket';
+    return ( <div> Basket</div>)
 }
