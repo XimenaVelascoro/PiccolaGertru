@@ -47,14 +47,14 @@ a{
   }
 }
 .logop{
-  background-image: url(./assets/data/img/piccolagertru.jpg) ;
+  background-image: url(./assets/components/img/piccolagertru.jpg) ;
   background-size: cover;
   width: 8rem;
   height: 8rem;
   border-radius: 2rem;
 }
 .block{
-  background-image: url(./assets/data/img/bannerd.png);
+  background-image: url(./assets/components/img/bannerd.png);
   background-size:cover;
   padding: 0.5rem;
   margin: 0.5rem;
