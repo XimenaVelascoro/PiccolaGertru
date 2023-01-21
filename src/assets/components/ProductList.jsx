@@ -1,5 +1,5 @@
 import React from "react";
-import { dataProducts } from "../data";
+import { dataProducts } from "../data/data";
 
 export const ProductList = ({ allProducts, setAllProducts }) => {
   const onAddProduct = () => {

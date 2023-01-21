@@ -1,19 +1,32 @@
 import Header from "./assets/components/Header";
 import Main from "./assets/components/Main";
 import Basket from "./assets/components/Basket";
+import data from "./assets/data/data.js"
+import { useState } from "react";
+
+
 
 
 function App() {
+  //useState con la data
+  const [articles, setArticles] = useState(data);
+  console.log(articles)
+
   return (
     <div>
-      <Header/>
+      <Header 
+      />
       <div className="row">
-        <Main/> 
+        <Main 
+        setArticles={setArticles} 
+        articles={articles}/>
+
         <Basket/>
       </div>
     </div>
   );
 }
+
 
 export default App;
 

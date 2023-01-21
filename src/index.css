@@ -1,11 +1,35 @@
 * {
   box-sizing: border-box;
+  font-size: 1.09rem;
+}
+@font-face {
+  font-family: "titulos";
+  src: url(./assets/data/fonts/ScheherazadeNew-Regular.ttf);
+}
+@font-face {
+  font-family: "parrafos";
+  src: url(./assets/data/fonts/Poppins-Regular.ttf);
+}
+
+
+body{
+  margin: 0;
+  font-family: "titulos", "parrafos";
+  background-color: #F2C185;
+  
+}
+
+a{
+  text-decoration: none;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.row.center{
+  align-items:center;
 }
 
 .col-1 {
@@ -16,16 +40,32 @@
 }
 @media screen and (min-width: 800px) {
   .col-1 {
-    flex: 1fr;
+    flex: 1;
   }
   .col-2 {
-    flex: 2fr;
+    flex: 2;
   }
 }
-
+.logop{
+  background-image: url(./assets/data/img/piccolagertru.jpg) ;
+  background-size: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 2rem;
+}
 .block{
-  background-image: url(./assets/data/img/img/bannerd.png);
+  background-image: url(./assets/data/img/bannerd.png);
   background-size:cover;
   padding: 0.5rem;
   margin: 0.5rem;
+
+}
+.navi{
+  background-color: #F2DEBA;
+  padding: rem;
+  margin: rem;
+  width: 38rem;
+  text-align:center;
+  
+  
 }

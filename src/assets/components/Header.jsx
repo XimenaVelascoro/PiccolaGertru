@@ -1,15 +1,15 @@
+
+
 export default function Header() {
   return (
-    <div className="block">
+    <div className="row center block">
       <div>
-        {" "}
         <a href="#/">
-          <h2>Carrito de Compras</h2>
+          <h2 className="logop"></h2>
         </a>
       </div>
       <div>
-        <a href="#/carrito">Carrito</a>
-        <a href="#/entraaqui">Entra Aqui</a>
+        <a href="#/menu">Menu</a>    <a href="#/carrito"> Carrito </a> 
       </div>
     </div>
   );
