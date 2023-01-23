@@ -1,5 +1,5 @@
-import Header from "./assets/components/Header";
-import Main from "./assets/components/Main";
+import Header from "./assets/components/Header/Header";
+import Main from "./assets/components/Main/Main";
 import Basket from "./assets/components/Basket";
 import data from "./assets/data/data.js"
 import { useState } from "react";
@@ -13,10 +13,10 @@ function App() {
   console.log(articles)
 
   return (
-    <div>
+    <div  className="row">
       <Header 
       />
-      <div className="row">
+      <div>
         <Main 
         setArticles={setArticles} 
         articles={articles}/>

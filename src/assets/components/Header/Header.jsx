@@ -1,10 +1,10 @@
-
+import "./Header.css"
 
 export default function Header() {
   return (
     <div className="row center block">
       <div>
-        <a href="#/">
+        <a href="#/logo">
           <h2 className="logop"></h2>
         </a>
       </div>

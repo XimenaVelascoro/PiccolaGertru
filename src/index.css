@@ -23,11 +23,6 @@ a{
   text-decoration: none;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .row.center{
   align-items:center;
 }
@@ -46,20 +41,7 @@ a{
     flex: 2;
   }
 }
-.logop{
-  background-image: url(./assets/components/img/piccolagertru.jpg) ;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 2rem;
-}
-.block{
-  background-image: url(./assets/components/img/bannerd.png);
-  background-size:cover;
-  padding: 0.5rem;
-  margin: 0.5rem;
 
-}
 .navi{
   background-color: #F2DEBA;
   padding: rem;
