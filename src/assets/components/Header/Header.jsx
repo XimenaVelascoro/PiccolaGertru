@@ -5,7 +5,7 @@ export default function Header() {
     <div className="row center block">
       <div>
         <a href="#/logo">
-          <h2 className="logop"></h2>
+          <h2 className="logop"> </h2>
         </a>
       </div>
       <div>

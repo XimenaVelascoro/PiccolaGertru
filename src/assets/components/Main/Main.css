@@ -1,15 +1,44 @@
-.product{
-    display:flex ;
-    width: 100%;
-
-
+@font-face {
+    font-family: "parrafos";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "titulos";
+    src: url(../fonts/ScheherazadeNew-Regular.ttf);
 }
 
-.product-item{
-    display: flex;
-    flex-direction: column;
-
+.product {
+ 
+  width: 100%;
+  font-family: "titulos";
+  background-image: url("../img/backg.jpg");
+  background-size:contain;  
 }
-.product-item img{
-    width: 50px;
+
+.product-title{
+    font-size: 3rem;
+    font-family: "titulos";
+}
+
+.product-item {
+  display: grid;
+  column-gap: 12rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  
+  
+}
+.nameProduct{
+    font-family: "parrafos";
+    font-style: italic;
+    font-size: 2rem;
+  
+}
+
+.product-item img {
+  width: 22rem;
+  height: 32rem;
+  border-radius: 5rem;
+  
 }

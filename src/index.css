@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: "titulos";
-  src: url(./assets/data/fonts/ScheherazadeNew-Regular.ttf);
+  src: url(../src/assets/components/fonts/ScheherazadeNew-Regular.ttf);
 }
 @font-face {
   font-family: "parrafos";
-  src: url(./assets/data/fonts/Poppins-Regular.ttf);
+  src: url(../src/assets/components/fonts/Poppins-Regular.ttf);
 }
 
 

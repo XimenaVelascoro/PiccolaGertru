@@ -38,7 +38,7 @@ const data = [
   
     {
       id: 100,
-      category: "Entradas",
+      category: "ENTRADAS",
       products: [
         {
           id: 101,
@@ -70,7 +70,7 @@ const data = [
     },
     {
       id: 120,
-      category: "Carnes",
+      category: "CARNES",
       products: [
         {
           id: 121,
@@ -101,7 +101,7 @@ const data = [
     },
     {
       id: 140,
-      category: "Pescados",
+      category: "PESCADOS",
       products: [
         {
           id: 141,
@@ -131,7 +131,7 @@ const data = [
     },
     {
       id: 160,
-      category: "Pastas",
+      category: "PASTAS",
       products: [
         {
           id: 161,
@@ -161,7 +161,7 @@ const data = [
     },
     {
       id: 180,
-      category: "Rissotto",
+      category: "RISSOTTO",
       products: [
         {
           id: 181,
@@ -191,7 +191,7 @@ const data = [
     },
     {
       id: 190,
-      category: "Spaguetti",
+      category: "SPAGUETTI",
       products: [
         {
           id: 191,
@@ -221,7 +221,7 @@ const data = [
     },
     {
       id: 220,
-      category: "Pizzas",
+      category: "PIZZAS",
       products: [
         {
           id: 221,
@@ -252,7 +252,7 @@ const data = [
     },
     {
       id: 250,
-      category: "Bebidas",
+      category: "BEBIDAS",
       products: [
         {
           id: 251,
@@ -314,7 +314,7 @@ const data = [
     },
     {
       id: 310,
-      category: "Postres",
+      category: "POSTRES",
       products: [
         {
           id: 311,
