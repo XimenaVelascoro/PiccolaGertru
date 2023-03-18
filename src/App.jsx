@@ -1,7 +1,7 @@
-import Header from "./assets/components/Header/Header";
-import Main from "./assets/components/Main/Main";
-import Basket from "./assets/components/Basket";
-import data from "./assets/data/data.js"
+import Header from "../src/components/Header/Header";
+import Main from "../src/components/Main/Main";
+import Basket from "../src/components/Basket";
+import data from "../src/components/data/data"
 import { useState } from "react";
 
 
@@ -13,9 +13,8 @@ function App() {
   console.log(articles)
 
   return (
-    <div  className="row">
-      <Header 
-      />
+    < >
+      <Header/>
       <div>
         <Main 
         setArticles={setArticles} 
@@ -23,7 +22,7 @@ function App() {
 
         <Basket/>
       </div>
-    </div>
+    </>
   );
 }
 

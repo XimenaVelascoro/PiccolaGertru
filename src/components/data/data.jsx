@@ -1,38 +1,36 @@
-//aqui va la información de cada producto
-//que va a representar un diccionario u obj
-//EL ID NO PUEDE REPETIRSE,
-//puede ir incrementando pero no se puyede repetir
-import antipasto from "../components/img/antipasto.jpeg";
-import Foccacia from "../components/img/foccacia.jpg";
-import Mozzarella from "../components/img/mozzarellacaliente.jpg";
-import PicadaLomo from "../components/img/lomodecerdoychampinones.jpg";
-import SteakPimienta from "../components/img/carnesteakpimienta.jpg";
-import Costillabbq from "../components/img/costillasbbq.jpg";
-import SalmonParrilla from "../components/img/salmonalaparrillaa.jpg";
-import FileteAtun from "../components/img/atunalaparrillaaa.jpg";
-import Cazuela from "../components/img/cazuelademariscos.jpg";
-import MacarroniAlHorno from "../components/img/macarronialhorno.jpg";
-import Lasagna from "../components/img/lasagnabolognesa.jpg";
-import MacarroniQuesos from "../components/img/macarroni4quesoss.jpg";
-import RissottoFrutos from "../components/img/rissottofrutosdelmar.jpg";
-import Paella from "../components/img/paellamarinera.jpg";
-import RissottoFun from "../components/img/rissottoalfunghi.jpg";
-import Carbonara from "../components/img/carbonara.jpg";
-import SpaAlPesto from "../components/img/spaghettialpesto.jpg";
-import SpaNero from "../components/img/spaghettinero.jpg";
-import PizzaCasa from "../components/img/PIZZA.jpg";
-import PizzaCarnes from "../components/img/pizzacarnes.jpg";
-import PizzaBari from "../components/img/pizzajamonyqueso.jpg";
-import Agua from "../components/img/vasodeagua.jpg" ;
-import Cafe from "../components/img/cafeamericano.jpg";
-import Limonada from "../components/img/limonadacerezada.jpg";
-import Soda from "../components/img/sodafrutosrojoshatsu.jpg";
-import Canada from "../components/img/canadadry.jpg";
-import CervezaNacional from "../components/img/cervezanacional.jpg";
-import CervezaCorona from "../components/img/cervezaimportada.jpg";
-import Queso from "../components/img/quesoconarequipe.jpg";
-import Palitos from "../components/img/palitosdeharina.jpg";
-import BrownieConHelado from "../components/img/brownieconhelado.jpg";
+import React from "react";
+import './data.css';
+import antipasto from "../../assets/img/antipasto.jpeg";
+import Foccacia from "../../assets/img/foccacia.jpg";
+import Mozzarella from "../../assets/img/mozzarellacaliente.jpg";
+import PicadaLomo from "../../assets/img/lomodecerdoychampinones.jpg";
+import SteakPimienta from "../../assets/img/carnesteakpimienta.jpg";
+import Costillabbq from "../../assets/img/costillasbbq.jpg";
+import SalmonParrilla from "../../assets/img/salmonalaparrillaa.jpg";
+import FileteAtun from "../../assets/img//atunalaparrillaaa.jpg";
+import Cazuela from "../../assets/img/cazuelademariscos.jpg";
+import MacarroniAlHorno from "../../assets/img/macarronialhorno.jpg";
+import Lasagna from "../../assets/img/lasagnabolognesa.jpg";
+import MacarroniQuesos from "../../assets/img/macarroni4quesoss.jpg";
+import RissottoFrutos from "../../assets/img/rissottofrutosdelmar.jpg";
+import Paella from "../../assets/img/paellamarinera.jpg";
+import RissottoFun from "../../assets/img/rissottoalfunghi.jpg";
+import Carbonara from "../../assets/img/carbonara.jpg";
+import SpaAlPesto from "../../assets/img/spaghettialpesto.jpg";
+import SpaNero from "../../assets/img/spaghettinero.jpg";
+import PizzaCasa from "../../assets/img/PIZZA.jpg";
+import PizzaCarnes from "../../assets/img/pizzacarnes.jpg";
+import PizzaBari from "../../assets/img/pizzajamonyqueso.jpg";
+import Agua from "../../assets/img/vasodeagua.jpg" ;
+import Cafe from "../../assets/img/cafeamericano.jpg";
+import Limonada from "../../assets/img/limonadacerezada.jpg";
+import Soda from "../../assets/img/sodafrutosrojoshatsu.jpg";
+import Canada from "../../assets/img/canadadry.jpg";
+import CervezaNacional from "../../assets/img/cervezanacional.jpg";
+import CervezaCorona from "../../assets/img/cervezaimportada.jpg";
+import Queso from "../../assets/img/quesoconarequipe.jpg";
+import Palitos from "../../assets/img/palitosdeharina.jpg";
+import BrownieConHelado from "../../assets/img/brownieconhelado.jpg";
 
 const data = [ 
   
@@ -344,5 +342,36 @@ const data = [
     }
   
 ]
+
+const DataFood= ({allDataFood, SetAllDataFood}) => {
+  return (
+    <section id="data">
+      <h5>Aqui Puedes ver</h5>
+      <h2>Nuestro Menu</h2>
+      <div className="container_data">
+        {data.map(({ id, nameProduct, description, price, img, quantity }) => {
+          return (
+            <article key={id} className="data_item">
+              <figure className="data_img">
+                <img src={img} alt=''></img>
+              </figure>
+              <h2> {nameProduct}</h2>
+              <div className="portafolio__item_cta">
+                <h3> {description} </h3>
+                <h5> {price} </h5>
+                <h5> {quantity} </h5>
+              </div>
+              <div>
+              <button onClick={() => onAddProduct()} className="btn-add-cart">
+              Añadir al carrito
+            </button>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section> //llama al #contact del archivo nav.jsx
+  );
+};
 
 export default  data

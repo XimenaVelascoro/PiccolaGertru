@@ -1,0 +1,32 @@
+.container_header{
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+.container_header h4{
+  flex: 1;
+  margin: 0 10px;
+}
+.logop {
+  background-image: url('../../assets/img/piccolagertru.jpg');
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 4rem;
+}
+
+.options {
+  /*background-image: url(../../assets/img/bannerd.png); 
+  background-size: cover;*/
+  display: flex;
+  align-items:center;
+  justify-content: right;
+  width: 52rem;
+  height: 12rem;
+  border-radius: 4rem;
+}
+.options a{
+  padding: 1rem;
+}
+

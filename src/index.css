@@ -1,6 +1,44 @@
-* {
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
   box-sizing: border-box;
-  font-size: 1.09rem;
+  list-style: none;
+  text-decoration: none;
+ 
+}
+:root{
+  /*vamos a crear variables*/
+  --color-bg:  #6f2a86e7 /*#F27127*/ ;
+  --color-bg-variant: #B695C0;  ; /* #A6381F;*/
+  /*color letra*/
+  --color-primary: #EDE6DB/* #ff7066/* #B84A44/* #A6381F*/;
+  /*color titulos*/
+  --color-primary-variant: #c5414a/* #F9CEEE /*#F28A2E*/;
+  --color-white: #ffffff;
+  --color-light: #f5abb0/* #9b35af9a; /*#A6381F*/;
+  /*Variable de transicion LOOK THAT ;-; */
+  --transition: all 400ms ease;
+  /*ancho de una clase contenedora de la mayoria de componentes */
+  --container-width-lg:75%;
+  /*para tablets*/
+  --container-width-md:86%;
+  /*small devices like a cellphone */
+  --container-width-sm:90%;
+  --color-service: #cf5a0b/*#551a06*/; /* segun yo este es un color browniosito*/
+  --color-black:#0a0a0a;
+  --color-beige: #ede6db;
+
+}
+body{
+  font-family: "titulos", "parrafos";
+  background: var(--color-beige);
+  color: var(--color-beige);
+  line-height: 1.7;
+ 
+  background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDljMTA0MmQ4N2NlMzEzOWYyYWIxODFhZmViZjNjZDdlMTM0YmE4MCZjdD1n/ZEHkGB5qlzjOo7Yxjt/giphy.gif);
+  background-size:cover;
 }
 @font-face {
   font-family: "titulos";
@@ -11,12 +49,20 @@
   src: url(../src/assets/components/fonts/Poppins-Regular.ttf);
 }
 
+h1{
+  font-size: 1.2rem;
+}
 
-body{
-  margin: 0;
-  font-family: "titulos", "parrafos";
-  background-color: #F2C185;
-  
+h2{
+  color: #37070d;
+}
+
+h3{
+  color: #37070d;
+}
+
+h5{
+  color: #37070d;
 }
 
 a{
@@ -33,6 +79,40 @@ a{
 .col-2 {
   flex-basis: 100%;
 }
+
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
 @media screen and (min-width: 800px) {
   .col-1 {
     flex: 1;
