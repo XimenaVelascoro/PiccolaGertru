@@ -1,8 +1,9 @@
 .container_header{
   display:flex;
-  justify-content: space-between;
-  
+  justify-content: space-between;   
 }
+
+
 
 .container_header h4{
   flex: 1;
@@ -13,20 +14,45 @@
   background-size: cover;
   width: 12rem;
   height: 12rem;
-  border-radius: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
 }
 
 .options {
-  /*background-image: url(../../assets/img/bannerd.png); 
-  background-size: cover;*/
   display: flex;
-  align-items:center;
+  align-items: end;
   justify-content: right;
   width: 52rem;
   height: 12rem;
   border-radius: 4rem;
+  gap: 3rem;
+
 }
-.options a{
+.link-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
   padding: 1rem;
 }
 
+
+.options .car{
+  background-image: url(../../assets/img/shoppingcar.png);
+  background-size: cover;
+  height:3rem;
+  width: 3rem;
+ 
+}
+
+.options .menu{
+  background-image: url(../../assets/img/menu.png);
+  background-size: cover;
+  height:3rem;
+  width: 3rem;
+}
+.options .cell{
+  background-image: url(../../assets/img/telefono.png);
+  background-size: cover;
+  height:3rem;
+  width: 3rem;
+}
